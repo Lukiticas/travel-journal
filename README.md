@@ -1,6 +1,9 @@
 ## PROJETO DE REACT!!
 
 <p>Projetinho massa proposto pelo scrimba!! O conceito é usar o react para criar um site de diario de viajem!</p>
+<br>
+<p>Foi algo muito legal para exercitar o react, js e css! Usei componentes, querys, reusabilidade dos componentes e mais coisas que o React tem a oferecer!
+  Recomendo a todos darem uma passada no site do [Scrimba]("https://scrimba.com/dashboard#overview") e fazer alguns cursos pois eles são **INCRIVEIS**</p>
 
 ### PREVIEW
 
