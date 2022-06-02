@@ -4,14 +4,14 @@ import Cards from "./components/Cards";
 import data from "./data";
 
 export default function App() {
-  const listaOfCards = data.map((locationData) => {
-    <Cards items={locationData} />;
+  const listOfCards = data.map((CardsData) => {
+    return <Cards items={CardsData} />;
   });
-
+  console.log(listOfCards);
   return (
     <main>
       <Navbar />
-      {listaOfCards}
+      <div className="list-cards">{listOfCards}</div>
     </main>
   );
 }

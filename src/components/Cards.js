@@ -1,28 +1,37 @@
 import React from "react";
+import PathImage from "../images/Path.png";
 
-export default function cards(items) {
+export default function cards(props) {
   return (
-    <div>
-      <img src={items.imageUrl} />
-      <div className="location">
-        <span className="loc-name">{items.Location}</span>
-        <span className="gMap-link">
-          <a href={items.googleMapsUrl} target="_blank">
-            View on Google Maps
-          </a>
-        </span>
+    <div className="card-body">
+      <img src={props.items.imageUrl} className="card-img" />
+      <div className="card-info">
+        <div className="card-location">
+          <span className="loc-name">
+            <img src={PathImage} className="path-img" />
+            {props.items.location.toUpperCase()}
+            <a
+              className="card-link"
+              href={props.items.googleMapsUrl}
+              target="_blank"
+            >
+              View on Google Maps
+            </a>
+          </span>
+        </div>
+        <h1>{props.items.title}</h1>
+        <div className="date">
+          <span>
+            {props.items.startDate} - {props.items.endDate}
+          </span>
+        </div>
+        <p className="description">{props.items.description}</p>
       </div>
-      <div className="date">
-        <span className="first-date">{items.startDate}</span>
-        <span className="last-date">{items.endDate}</span>
-      </div>
-      <p className="description">{items.description}</p>
     </div>
   );
 }
 
-{
-  /*   {
+/*   {
     title: "Geirangerfjord",
     location: "Norway",
     googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
@@ -32,4 +41,3 @@ export default function cards(items) {
       "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
     imageUrl: "https://source.unsplash.com/3PeSjpLVtLg",
   }, */
-}

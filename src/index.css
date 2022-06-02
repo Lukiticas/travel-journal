@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "inter", "Courier New", Courier, monospace;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.nav-wrap {
+  width: 100%;
+  height: 55px;
+  background-color: #f55a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.nav-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  margin: 0 7px;
+}
+
+.nav-img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
+
+.card-body {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 470px;
+  height: 170px;
+  display: flex;
+  margin: 40px 0;
+  border: 1px solid rgb(235, 227, 227);
+}
+
+.card-img {
+  width: 125px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  align-items: center;
+}
+
+.card-location {
+  font-size: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.path-img {
+  width: 7px;
+  margin-right: 4px;
+}
+
+.loc-name {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  vertical-align: text-top;
+}
+.card-link {
+  margin: 0 15px;
+  letter-spacing: normal;
+  font-size: 10px;
+}
+
+.card-link:link {
+  color: #918e9b;
+}
+.card-link:visited {
+  color: #f55a5a;
+}
+
+.card-body h1 {
+  width: 100%;
+  height: 40px;
+  margin: 7px 0;
+  font-size: 25px;
+  font-weight: 700;
+  white-space: pre;
+}
+
+.date {
+  width: 100%;
+  display: flex;
+}
+
+.date span {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.description {
+  font-size: 10.5px;
+  font-weight: 400;
+  max-width: 330px;
+}
