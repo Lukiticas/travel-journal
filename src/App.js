@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
-import data from "./data";
+import Data from "./Data";
 
 export default function App() {
-  const listOfCards = data.map((CardsData) => {
+  const listOfCards = Data.map((CardsData) => {
     return <Cards items={CardsData} />;
   });
   console.log(listOfCards);
