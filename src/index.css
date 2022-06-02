@@ -114,3 +114,22 @@ main {
   font-weight: 400;
   max-width: 330px;
 }
+
+@media screen and (max-width: 600px) {
+  .card-body {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .card-location,
+  .loc-name {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

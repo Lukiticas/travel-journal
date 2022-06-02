@@ -8,8 +8,10 @@ export default function cards(props) {
       <div className="card-info">
         <div className="card-location">
           <span className="loc-name">
-            <img src={PathImage} className="path-img" />
-            {props.items.location.toUpperCase()}
+            <span className="location">
+              <img src={PathImage} className="path-img" />
+              {props.items.location.toUpperCase()}
+            </span>
             <a
               className="card-link"
               href={props.items.googleMapsUrl}
